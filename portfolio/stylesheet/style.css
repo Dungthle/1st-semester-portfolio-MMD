@@ -1,0 +1,228 @@
+
+body {
+    background-color: white;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-family: futura;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    font-family: futura;   
+}
+
+h3{
+    color: black;
+    text-align: center;
+    font-family: futura;
+}
+
+p {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-family: futura;
+}
+
+header {
+    color: black;
+    font-family: futura;
+    font-size: 16px;
+    text-align: left;
+}
+
+aside {
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10%;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+li a {
+    font-family: futura;
+    color: black;
+    font-size: 16pt;
+    display: block;
+    padding: 8px 0px;
+    text-decoration: none;
+}
+
+/* unvisited link*/
+li a:link {
+    color: black;
+}
+
+/*visited link */
+li a:visited {
+    color: black;
+}
+
+/*mouse over link*/
+li a:hover {
+    border-bottom: 3px solid;
+    color: grey;
+}
+
+/*selected link*/
+li a:active {
+    color: grey;
+}
+
+.link-web a {
+    text-decoration: none;
+    font-size: 16pt;
+    display: block;
+    text-align: center;
+}
+
+.link-web a p:hover {
+    border-bottom: 3px solid;
+    color: grey;
+}
+
+.mb-decon {
+    display: none;
+}
+
+.st-img {
+    display: none;
+}
+
+.link-ux  {
+    text-decoration: none;
+    font-size: 16pt;
+    display: block;
+    text-align: center;
+}
+
+.link-ux a p:hover {
+    border-bottom: 3px solid;
+    color: grey;
+}
+
+.link-animation a {
+    text-decoration: none;
+    font-size: 16pt;
+    display: block;
+    padding: 8px 0px;
+    text-align: center;
+}
+
+.link-animation a p:hover {
+    border-bottom: 3px solid;
+    color: grey;
+}
+
+.link-content a {
+    text-decoration: none;
+    font-size: 16pt;
+    display: block;
+    padding: 8px 0px;
+    text-align: center;
+}
+
+.link-content a p:hover {
+    border-bottom: 3px solid;
+    color: grey;
+}
+
+
+.portrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    color: black;
+    font-family: futura;
+    font-size: 16px;
+    text-align: center;
+    
+}
+
+/* MEDIA SPECIFIC GRID, TABLET*/
+@media only screen and (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+            "header header2"
+            "aside main"
+            "footer footer2";
+    }
+
+    header {
+        grid-area: header2;
+    }
+
+    h1 {
+        grid-area: header2;
+        text-align: left;
+    }
+    
+    h2 {
+        grid-area: header2;
+        text-align: left;
+    }
+       
+    h3 {
+         grid-area: header2;
+        text-align: left;
+    }
+
+    p {
+        color: black;
+        text-align: left;
+        text-decoration: none;
+        font-family: futura;
+    }
+
+    main {
+        grid-area: main;
+        text-align: left;
+    }
+
+    aside {
+        grid-area: header;
+        position: sticky;
+        top: 0;
+    }
+
+    .mb-decon {
+        grid-area: main;
+        display: contents;
+    }
+    
+    .st-img {
+        grid-area: main;
+        display: contents;
+    }
+    
+
+.portrait {
+        grid-area: main;
+
+    }
+
+footer {
+    grid-area: footer2;
+    text-align: left;
+    margin: 30px 0 10px 0;
+}
+}
+
+/* MEDIA SPECIFIC GRID, DESKTOP*/
+@media only screen and (min-width: 1000px) {
+}
